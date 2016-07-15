@@ -1,3 +1,4 @@
+syntax = "proto2";
 message RequestEnvelop {
   required int32 unknown1 = 1;
   optional int64 rpc_id = 3;
@@ -11,11 +12,19 @@ message RequestEnvelop {
 
   message Requests {
     required int32 type = 1;
-    optional Unknown3 message = 2;
+    optional bytes message=2;
   }
 
-  message Unknown3 {
-    required string unknown4 = 1;
+  message four2int{
+      optional uint64 value=1;
+  }
+   
+  message four2string{
+      optional string value=1;
+      optional fixed64 PlayerLatDegrees = 2;
+      optional fixed64 PlayerLngDegrees = 3;
+      optional fixed64 GymLatDegrees = 4;
+      optional fixed64 GymLngDegrees = 5;
   }
 
   message Unknown6 {
@@ -63,33 +72,82 @@ message ResponseEnvelop {
   }
 
   message Payload {
-    required int32 unknown1 = 1;
-    optional Profile profile = 2;
+    optional Gym value=1;
   }
 
-  message Profile {
-    required int64 creation_time = 1;
-    optional string username = 2;
-    optional int32 team = 5;
-    optional bytes tutorial = 7; 
-    optional AvatarDetails avatar = 8; 
-    optional int32 poke_storage = 9;
-    optional int32 item_storage = 10;
-    optional string unknown11 = 11;
-    optional string unknown12 = 12;
-    optional string unknown13 = 13;
-    repeated Currency currency = 14;
-
-    message AvatarDetails {
-      optional int32 unknown2 = 2;
-      optional int32 unknown3 = 3;
-      optional int32 unknown9 = 9;
-      optional int32 unknown10 = 10;
-    }
-
-    message Currency {
-      required string type = 1;
-      optional int32 amount = 2;
-    }
+  message four2int{
+      optional uint64 value=1;
   }
+   
+  message four2string{
+      optional Gym value=1;
+  }
+
+  message Gym {
+      optional GymInfo gym = 1;
+      repeated GymPlayers players = 2; 
+
+      message GymInfo {
+        optional string GymState = 1;
+        optional string Name = 2;
+        optional string Url = 3;
+        optional int32 Result = 4;
+        optional string Description = 5;
+      }
+
+      message GymPlayers {
+        optional Pokemon pokemon = 1;
+        optional Player2 owner = 2;
+
+        message Pokemon {
+          optional fixed64 Id = 1;
+          optional int32 PokemonId = 2;
+          optional int32 Cp = 3;
+          optional int32 Stamina = 4;
+          optional int32 MaxStamina = 5;
+          optional int32 Move1 = 6;
+          optional int32 Move2 = 7;
+          optional int32 DeployedFortId = 8;
+          optional string OwnerName = 9;
+          optional int32 IsEgg = 10;
+          optional int32 EggKmWalkedTarget = 11;
+          optional int32 EggKmWalkedStart = 12;
+          optional int32 Origin = 14;
+          optional fixed64 HeightM = 15;
+          optional fixed64 WeightKg = 16;
+          optional int32 IndividualAttack = 17;
+          optional int32 IndividualDefense = 18;
+          optional int32 IndividualStamina = 19;
+          optional fixed64 CpMultiplier = 20;
+          optional int32 Pokeball = 21;
+          optional int32 CapturedS2CellId = 22;
+          optional int32 BattlesAttacked = 23;
+          optional int32 BattlesDefended = 24;
+          optional int32 EggIncubatorId = 25;
+          optional int32 CreationTimeMs = 26;
+          optional int32 NumUpgrades = 27;
+          optional fixed64 AdditionalCpMultiplier = 28;
+          optional int32 Favorite = 29;
+          optional int32 Nickname = 30;
+          optional int32 FromFort = 31;
+        }
+        message Player2 {
+          optional string Name = 1;
+          optional int32 Level = 2;
+          optional Avatar Avatar = 3;
+        }
+        message Avatar {
+          optional int32 Avatar = 8;
+          optional int32 Skin = 2;
+          optional int32 Hair = 3;
+          optional int32 Shirt = 4;
+          optional int32 Pants = 5;
+          optional int32 Hat = 6;
+          optional int32 Shoes = 7;
+          optional int32 Eyes = 9;
+          optional int32 Backpack = 10;
+        }
+      }
+    }
+
 }

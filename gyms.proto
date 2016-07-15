@@ -1,0 +1,116 @@
+syntax = "proto2";
+
+enum Custom_TeamColor {
+  NEUTRAL = 0;
+  BLUE = 1;
+  RED = 2;
+  YELLOW = 3;
+}
+
+enum FortType {
+  GYM = 0;
+  CHECKPOINT = 1; //Pokestop
+}
+
+message RequestEnvelopGym {
+  required int32 unknown1 = 1;
+  optional int64 rpc_id = 3;
+  repeated Requests requests = 4;
+  optional Unknown6 unknown6 = 6;
+  optional fixed64 latitude = 7;
+  optional fixed64 longitude = 8;
+  optional fixed64 altitude = 9;
+  optional AuthInfo auth = 10;
+  optional int64 unknown12 = 12;
+
+  message Requests {
+    required int32 type = 1;
+    optional bytes message=2;
+  }
+
+  message four2int{
+      optional uint64 value=1;
+  }
+   
+  message four2string{
+    repeated uint64 cells=1 [packed=true];
+    optional fixed64 dunno = 2;
+    optional fixed64 lat = 3;
+    optional fixed64 lon = 4;
+  }
+
+  message Unknown6 {
+    required int32 unknown1 = 1;
+    required Unknown2 unknown2 = 2;
+
+    message Unknown2 {
+      required bytes unknown1 = 1;
+    }
+
+  }
+  message AuthInfo {
+    required string provider = 1;
+    required JWT token = 2;
+
+    message JWT {
+      required string contents = 1;
+      required int32 unknown13  = 2;
+    }
+  }
+}
+
+message ResponseEnvelopGym {
+  required int32 unknown1 = 1;
+  optional int64 unknown2 = 2;
+  optional string api_url = 3;
+  optional Unknown6 unknown6 = 6;
+  optional Unknown7 unknown7 = 7;
+  repeated Payload payload = 100;
+
+  message Unknown6 {
+    required int32 unknown1 = 1;
+    required Unknown2 unknown2 = 2;
+
+    message Unknown2 {
+      required bytes unknown1 = 1;
+    }
+  }
+
+  message Unknown7 {
+    optional bytes unknown71 = 1;
+    optional int64 unknown72 = 2;
+    optional bytes unknown73 = 3;
+  }
+
+  message Payload {
+    repeated ClientMapCellProto cells=1;
+  }
+
+  message ClientMapCellProto {
+
+    // S2 geographic area that the cell covers (http://s2map.com/) (https://code.google.com/archive/p/s2-geometry-library/)
+    optional uint64 S2CellId = 1;
+
+    // current timestamp
+    optional int64 AsOfTimeMs = 2;
+
+    repeated PokemonFortProto Fort = 3;
+
+    message PokemonFortProto {
+      optional string FortId = 1;
+      optional int64 LastModifiedMs = 2;
+      optional fixed64 Latitude = 3;
+      optional fixed64 Longitude = 4;
+      optional int32 Enabled = 8;
+
+      // Whether someone is battling at the gym currently
+      optional int32 IsInBattle = 11;
+
+      // Fields related to pokestops only
+
+      // If 1, this is a pokestop
+      optional int32 FortType = 9;
+    }
+  }
+
+}

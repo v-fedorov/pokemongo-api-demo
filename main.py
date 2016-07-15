@@ -4,6 +4,7 @@ import struct
 import json
 import argparse
 import pokemon_pb2
+import gyms_pb2
 
 from datetime import datetime
 from geopy.geocoders import GoogleV3
@@ -55,7 +56,7 @@ def api_req(api_endpoint, access_token, req):
     try:
         p_req = pokemon_pb2.RequestEnvelop()
         p_req.unknown1 = 2
-        p_req.rpc_id = 8145806132888207460
+        p_req.rpc_id = 9092199861574434830
 
         p_req.requests.MergeFrom(req)
 
@@ -77,22 +78,58 @@ def api_req(api_endpoint, access_token, req):
             print(e)
         return None
 
+def api_req_gym(api_endpoint, access_token, req):
+    try:
+        p_req = gyms_pb2.RequestEnvelopGym()
+        p_req.unknown1 = 2
+        p_req.rpc_id = 9092199861574434830
+
+        p_req.requests.MergeFrom(req)
+
+        p_req.latitude, p_req.longitude, p_req.altitude = get_location_coords()
+
+        p_req.unknown12 = 989
+        p_req.auth.provider = 'ptc'
+        p_req.auth.token.contents = access_token
+        p_req.auth.token.unknown13 = 59
+        protobuf = p_req.SerializeToString()
+
+        r = SESSION.post(api_endpoint, data=protobuf, verify=False)
+
+        p_ret = gyms_pb2.ResponseEnvelopGym()
+        p_ret.ParseFromString(r.content)
+        return p_ret
+    except Exception,e:
+        if DEBUG:
+            print(e)
+        return None
+
 
 def get_api_endpoint(access_token):
     req = pokemon_pb2.RequestEnvelop()
 
     req1 = req.requests.add()
-    req1.type = 2
+    req1.type = 134
     req2 = req.requests.add()
     req2.type = 126
     req3 = req.requests.add()
     req3.type = 4
+
+    integerValue=req.four2int()
+    integerValue.value=1468347297482
+    req3.message=integerValue.SerializeToString()
+
+    # req3.message.unknown4 = 1468546084127
     req4 = req.requests.add()
     req4.type = 129
     req5 = req.requests.add()
     req5.type = 5
-    req5.message.unknown4 = "4a2e9bc330dae60e7b74fc85b98868ab4700802e"
+    stringValue=req.four2string()
+    stringValue.value="4a2e9bc330dae60e7b74fc85b98868ab4700802e"
+    req5.message=stringValue.SerializeToString()
+    # req5.message.unknown4 = "4a2e9bc330dae60e7b74fc85b98868ab4700802e"
 
+    print req.requests[2]
     p_ret = api_req(API_URL, access_token, req.requests)
 
     try:
@@ -101,14 +138,42 @@ def get_api_endpoint(access_token):
         return None
 
 
-def get_profile(api_endpoint, access_token):
+def get_gym(api_endpoint, access_token):
     req = pokemon_pb2.RequestEnvelop()
 
     req1 = req.requests.add()
-    req1.type = 2
+    req1.type = 134
+    stringValue=req.four2string()
+    stringValue.value="4a9a35bee0e54cbebc13d3325286848e.16"
+    stringValue.PlayerLatDegrees=0x404409e2ef4e0115
+    stringValue.PlayerLngDegrees=0xc052c577681669cf
+    stringValue.GymLatDegrees=0x404409e2ef4e0115
+    stringValue.GymLngDegrees=0xc052c577681669cf
+
+
+    req1.message=stringValue.SerializeToString()
+    # req1.message.unknown4 = "4a9a35bee0e54cbebc13d3325286848e.16"
 
     return api_req(api_endpoint, access_token, req.requests)
 
+def get_gyms(api_endpoint, access_token):
+    req = gyms_pb2.RequestEnvelopGym()
+
+    req1 = req.requests.add()
+    req1.type = 106
+    stringValue=req.four2string()
+    stringValue.cells.append(9927817343864406016)
+    stringValue.cells.append(9927817350306856960)
+    stringValue.cells.append(9927817361044275200)
+    stringValue.cells.append(9927817367486726144)
+    stringValue.cells.append(9927817352454340608)
+    stringValue.lat=0x4044087720000000
+    stringValue.lon=0xc052c51060000000
+
+    req1.message=stringValue.SerializeToString()
+    # req1.message.unknown4 = "4a9a35bee0e54cbebc13d3325286848e.16"
+
+    return api_req_gym(api_endpoint, access_token, req.requests)
 
 def login_ptc(username, password):
     print('[!] login for: {}'.format(username))
@@ -174,20 +239,39 @@ def main():
         return
     print('[+] Received API endpoint: {}'.format(api_endpoint))
 
-    profile = get_profile(api_endpoint, access_token)
-    if profile is not None:
+    # profile = get_profile(api_endpoint, access_token)
+    # if profile is not None:
+    #     print('[+] Login successful')
+
+    #     print profile.payload[0]
+
+    #     profile = profile.payload[0].profile
+    #     print('[+] Username: {}'.format(profile.username))
+
+    #     creation_time = datetime.fromtimestamp(int(profile.creation_time)/1000)
+    #     print('[+] You are playing Pokemon Go since: {}'.format(
+    #         creation_time.strftime('%Y-%m-%d %H:%M:%S'),
+    #     ))
+
+    #     for curr in profile.currency:
+    #         print('[+] {}: {}'.format(curr.type, curr.amount))
+    # else:
+    #     print('[-] Ooops...')
+
+    gyms = get_gyms(api_endpoint, access_token)
+    if gyms is not None:
         print('[+] Login successful')
 
-        profile = profile.payload[0].profile
-        print('[+] Username: {}'.format(profile.username))
+        print gyms
+    else:
+        print('[-] Ooops...')
 
-        creation_time = datetime.fromtimestamp(int(profile.creation_time)/1000)
-        print('[+] You are playing Pokemon Go since: {}'.format(
-            creation_time.strftime('%Y-%m-%d %H:%M:%S'),
-        ))
 
-        for curr in profile.currency:
-            print('[+] {}: {}'.format(curr.type, curr.amount))
+    gym = get_gym(api_endpoint, access_token)
+    if gym is not None:
+        print('[+] Login successful')
+
+        print gym.payload[0]
     else:
         print('[-] Ooops...')
 

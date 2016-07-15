@@ -18,7 +18,8 @@ _sym_db = _symbol_database.Default()
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='pokemon.proto',
   package='',
-  serialized_pb=_b('\n\rpokemon.proto\"\xc7\x04\n\x0eRequestEnvelop\x12\x10\n\x08unknown1\x18\x01 \x02(\x05\x12\x0e\n\x06rpc_id\x18\x03 \x01(\x03\x12*\n\x08requests\x18\x04 \x03(\x0b\x32\x18.RequestEnvelop.Requests\x12*\n\x08unknown6\x18\x06 \x01(\x0b\x32\x18.RequestEnvelop.Unknown6\x12\x10\n\x08latitude\x18\x07 \x01(\x06\x12\x11\n\tlongitude\x18\x08 \x01(\x06\x12\x10\n\x08\x61ltitude\x18\t \x01(\x06\x12&\n\x04\x61uth\x18\n \x01(\x0b\x32\x18.RequestEnvelop.AuthInfo\x12\x11\n\tunknown12\x18\x0c \x01(\x03\x1a\x43\n\x08Requests\x12\x0c\n\x04type\x18\x01 \x02(\x05\x12)\n\x07message\x18\x02 \x01(\x0b\x32\x18.RequestEnvelop.Unknown3\x1a\x1c\n\x08Unknown3\x12\x10\n\x08unknown4\x18\x01 \x02(\t\x1ao\n\x08Unknown6\x12\x10\n\x08unknown1\x18\x01 \x02(\x05\x12\x33\n\x08unknown2\x18\x02 \x02(\x0b\x32!.RequestEnvelop.Unknown6.Unknown2\x1a\x1c\n\x08Unknown2\x12\x10\n\x08unknown1\x18\x01 \x02(\x0c\x1au\n\x08\x41uthInfo\x12\x10\n\x08provider\x18\x01 \x02(\t\x12+\n\x05token\x18\x02 \x02(\x0b\x32\x1c.RequestEnvelop.AuthInfo.JWT\x1a*\n\x03JWT\x12\x10\n\x08\x63ontents\x18\x01 \x02(\t\x12\x11\n\tunknown13\x18\x02 \x02(\x05\"\xf5\x06\n\x0fResponseEnvelop\x12\x10\n\x08unknown1\x18\x01 \x02(\x05\x12\x10\n\x08unknown2\x18\x02 \x01(\x03\x12\x0f\n\x07\x61pi_url\x18\x03 \x01(\t\x12+\n\x08unknown6\x18\x06 \x01(\x0b\x32\x19.ResponseEnvelop.Unknown6\x12+\n\x08unknown7\x18\x07 \x01(\x0b\x32\x19.ResponseEnvelop.Unknown7\x12)\n\x07payload\x18\x64 \x03(\x0b\x32\x18.ResponseEnvelop.Payload\x1ap\n\x08Unknown6\x12\x10\n\x08unknown1\x18\x01 \x02(\x05\x12\x34\n\x08unknown2\x18\x02 \x02(\x0b\x32\".ResponseEnvelop.Unknown6.Unknown2\x1a\x1c\n\x08Unknown2\x12\x10\n\x08unknown1\x18\x01 \x02(\x0c\x1a\x43\n\x08Unknown7\x12\x11\n\tunknown71\x18\x01 \x01(\x0c\x12\x11\n\tunknown72\x18\x02 \x01(\x03\x12\x11\n\tunknown73\x18\x03 \x01(\x0c\x1a\x46\n\x07Payload\x12\x10\n\x08unknown1\x18\x01 \x02(\x05\x12)\n\x07profile\x18\x02 \x01(\x0b\x32\x18.ResponseEnvelop.Profile\x1a\xa8\x03\n\x07Profile\x12\x15\n\rcreation_time\x18\x01 \x02(\x03\x12\x10\n\x08username\x18\x02 \x01(\t\x12\x0c\n\x04team\x18\x05 \x01(\x05\x12\x10\n\x08tutorial\x18\x07 \x01(\x0c\x12\x36\n\x06\x61vatar\x18\x08 \x01(\x0b\x32&.ResponseEnvelop.Profile.AvatarDetails\x12\x14\n\x0cpoke_storage\x18\t \x01(\x05\x12\x14\n\x0citem_storage\x18\n \x01(\x05\x12\x11\n\tunknown11\x18\x0b \x01(\t\x12\x11\n\tunknown12\x18\x0c \x01(\t\x12\x11\n\tunknown13\x18\r \x01(\t\x12\x33\n\x08\x63urrency\x18\x0e \x03(\x0b\x32!.ResponseEnvelop.Profile.Currency\x1aX\n\rAvatarDetails\x12\x10\n\x08unknown2\x18\x02 \x01(\x05\x12\x10\n\x08unknown3\x18\x03 \x01(\x05\x12\x10\n\x08unknown9\x18\t \x01(\x05\x12\x11\n\tunknown10\x18\n \x01(\x05\x1a(\n\x08\x43urrency\x12\x0c\n\x04type\x18\x01 \x02(\t\x12\x0e\n\x06\x61mount\x18\x02 \x01(\x05')
+  syntax='proto2',
+  serialized_pb=_b('\n\rpokemon.proto\"\xaa\x05\n\x0eRequestEnvelop\x12\x10\n\x08unknown1\x18\x01 \x02(\x05\x12\x0e\n\x06rpc_id\x18\x03 \x01(\x03\x12*\n\x08requests\x18\x04 \x03(\x0b\x32\x18.RequestEnvelop.Requests\x12*\n\x08unknown6\x18\x06 \x01(\x0b\x32\x18.RequestEnvelop.Unknown6\x12\x10\n\x08latitude\x18\x07 \x01(\x06\x12\x11\n\tlongitude\x18\x08 \x01(\x06\x12\x10\n\x08\x61ltitude\x18\t \x01(\x06\x12&\n\x04\x61uth\x18\n \x01(\x0b\x32\x18.RequestEnvelop.AuthInfo\x12\x11\n\tunknown12\x18\x0c \x01(\x03\x1a)\n\x08Requests\x12\x0c\n\x04type\x18\x01 \x02(\x05\x12\x0f\n\x07message\x18\x02 \x01(\x0c\x1a\x19\n\x08\x66our2int\x12\r\n\x05value\x18\x01 \x01(\x04\x1a~\n\x0b\x66our2string\x12\r\n\x05value\x18\x01 \x01(\t\x12\x18\n\x10PlayerLatDegrees\x18\x02 \x01(\x06\x12\x18\n\x10PlayerLngDegrees\x18\x03 \x01(\x06\x12\x15\n\rGymLatDegrees\x18\x04 \x01(\x06\x12\x15\n\rGymLngDegrees\x18\x05 \x01(\x06\x1ao\n\x08Unknown6\x12\x10\n\x08unknown1\x18\x01 \x02(\x05\x12\x33\n\x08unknown2\x18\x02 \x02(\x0b\x32!.RequestEnvelop.Unknown6.Unknown2\x1a\x1c\n\x08Unknown2\x12\x10\n\x08unknown1\x18\x01 \x02(\x0c\x1au\n\x08\x41uthInfo\x12\x10\n\x08provider\x18\x01 \x02(\t\x12+\n\x05token\x18\x02 \x02(\x0b\x32\x1c.RequestEnvelop.AuthInfo.JWT\x1a*\n\x03JWT\x12\x10\n\x08\x63ontents\x18\x01 \x02(\t\x12\x11\n\tunknown13\x18\x02 \x02(\x05\"\xb0\r\n\x0fResponseEnvelop\x12\x10\n\x08unknown1\x18\x01 \x02(\x05\x12\x10\n\x08unknown2\x18\x02 \x01(\x03\x12\x0f\n\x07\x61pi_url\x18\x03 \x01(\t\x12+\n\x08unknown6\x18\x06 \x01(\x0b\x32\x19.ResponseEnvelop.Unknown6\x12+\n\x08unknown7\x18\x07 \x01(\x0b\x32\x19.ResponseEnvelop.Unknown7\x12)\n\x07payload\x18\x64 \x03(\x0b\x32\x18.ResponseEnvelop.Payload\x1ap\n\x08Unknown6\x12\x10\n\x08unknown1\x18\x01 \x02(\x05\x12\x34\n\x08unknown2\x18\x02 \x02(\x0b\x32\".ResponseEnvelop.Unknown6.Unknown2\x1a\x1c\n\x08Unknown2\x12\x10\n\x08unknown1\x18\x01 \x02(\x0c\x1a\x43\n\x08Unknown7\x12\x11\n\tunknown71\x18\x01 \x01(\x0c\x12\x11\n\tunknown72\x18\x02 \x01(\x03\x12\x11\n\tunknown73\x18\x03 \x01(\x0c\x1a.\n\x07Payload\x12#\n\x05value\x18\x01 \x01(\x0b\x32\x14.ResponseEnvelop.Gym\x1a\x19\n\x08\x66our2int\x12\r\n\x05value\x18\x01 \x01(\x04\x1a\x32\n\x0b\x66our2string\x12#\n\x05value\x18\x01 \x01(\x0b\x32\x14.ResponseEnvelop.Gym\x1a\xac\t\n\x03Gym\x12)\n\x03gym\x18\x01 \x01(\x0b\x32\x1c.ResponseEnvelop.Gym.GymInfo\x12\x30\n\x07players\x18\x02 \x03(\x0b\x32\x1f.ResponseEnvelop.Gym.GymPlayers\x1a[\n\x07GymInfo\x12\x10\n\x08GymState\x18\x01 \x01(\t\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\x0b\n\x03Url\x18\x03 \x01(\t\x12\x0e\n\x06Result\x18\x04 \x01(\x05\x12\x13\n\x0b\x44\x65scription\x18\x05 \x01(\t\x1a\xea\x07\n\nGymPlayers\x12\x38\n\x07pokemon\x18\x01 \x01(\x0b\x32\'.ResponseEnvelop.Gym.GymPlayers.Pokemon\x12\x36\n\x05owner\x18\x02 \x01(\x0b\x32\'.ResponseEnvelop.Gym.GymPlayers.Player2\x1a\xf8\x04\n\x07Pokemon\x12\n\n\x02Id\x18\x01 \x01(\x06\x12\x11\n\tPokemonId\x18\x02 \x01(\x05\x12\n\n\x02\x43p\x18\x03 \x01(\x05\x12\x0f\n\x07Stamina\x18\x04 \x01(\x05\x12\x12\n\nMaxStamina\x18\x05 \x01(\x05\x12\r\n\x05Move1\x18\x06 \x01(\x05\x12\r\n\x05Move2\x18\x07 \x01(\x05\x12\x16\n\x0e\x44\x65ployedFortId\x18\x08 \x01(\x05\x12\x11\n\tOwnerName\x18\t \x01(\t\x12\r\n\x05IsEgg\x18\n \x01(\x05\x12\x19\n\x11\x45ggKmWalkedTarget\x18\x0b \x01(\x05\x12\x18\n\x10\x45ggKmWalkedStart\x18\x0c \x01(\x05\x12\x0e\n\x06Origin\x18\x0e \x01(\x05\x12\x0f\n\x07HeightM\x18\x0f \x01(\x06\x12\x10\n\x08WeightKg\x18\x10 \x01(\x06\x12\x18\n\x10IndividualAttack\x18\x11 \x01(\x05\x12\x19\n\x11IndividualDefense\x18\x12 \x01(\x05\x12\x19\n\x11IndividualStamina\x18\x13 \x01(\x05\x12\x14\n\x0c\x43pMultiplier\x18\x14 \x01(\x06\x12\x10\n\x08Pokeball\x18\x15 \x01(\x05\x12\x18\n\x10\x43\x61pturedS2CellId\x18\x16 \x01(\x05\x12\x17\n\x0f\x42\x61ttlesAttacked\x18\x17 \x01(\x05\x12\x17\n\x0f\x42\x61ttlesDefended\x18\x18 \x01(\x05\x12\x16\n\x0e\x45ggIncubatorId\x18\x19 \x01(\x05\x12\x16\n\x0e\x43reationTimeMs\x18\x1a \x01(\x05\x12\x13\n\x0bNumUpgrades\x18\x1b \x01(\x05\x12\x1e\n\x16\x41\x64\x64itionalCpMultiplier\x18\x1c \x01(\x06\x12\x10\n\x08\x46\x61vorite\x18\x1d \x01(\x05\x12\x10\n\x08Nickname\x18\x1e \x01(\x05\x12\x10\n\x08\x46romFort\x18\x1f \x01(\x05\x1a^\n\x07Player2\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\r\n\x05Level\x18\x02 \x01(\x05\x12\x36\n\x06\x41vatar\x18\x03 \x01(\x0b\x32&.ResponseEnvelop.Gym.GymPlayers.Avatar\x1a\x8e\x01\n\x06\x41vatar\x12\x0e\n\x06\x41vatar\x18\x08 \x01(\x05\x12\x0c\n\x04Skin\x18\x02 \x01(\x05\x12\x0c\n\x04Hair\x18\x03 \x01(\x05\x12\r\n\x05Shirt\x18\x04 \x01(\x05\x12\r\n\x05Pants\x18\x05 \x01(\x05\x12\x0b\n\x03Hat\x18\x06 \x01(\x05\x12\r\n\x05Shoes\x18\x07 \x01(\x05\x12\x0c\n\x04\x45yes\x18\t \x01(\x05\x12\x10\n\x08\x42\x61\x63kpack\x18\n \x01(\x05')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -41,8 +42,8 @@ _REQUESTENVELOP_REQUESTS = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='message', full_name='RequestEnvelop.Requests.message', index=1,
-      number=2, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
+      number=2, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -54,24 +55,25 @@ _REQUESTENVELOP_REQUESTS = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
   oneofs=[
   ],
   serialized_start=272,
-  serialized_end=339,
+  serialized_end=313,
 )
 
-_REQUESTENVELOP_UNKNOWN3 = _descriptor.Descriptor(
-  name='Unknown3',
-  full_name='RequestEnvelop.Unknown3',
+_REQUESTENVELOP_FOUR2INT = _descriptor.Descriptor(
+  name='four2int',
+  full_name='RequestEnvelop.four2int',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='unknown4', full_name='RequestEnvelop.Unknown3.unknown4', index=0,
-      number=1, type=9, cpp_type=9, label=2,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
+      name='value', full_name='RequestEnvelop.four2int.value', index=0,
+      number=1, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -83,11 +85,70 @@ _REQUESTENVELOP_UNKNOWN3 = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=341,
-  serialized_end=369,
+  serialized_start=315,
+  serialized_end=340,
+)
+
+_REQUESTENVELOP_FOUR2STRING = _descriptor.Descriptor(
+  name='four2string',
+  full_name='RequestEnvelop.four2string',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='value', full_name='RequestEnvelop.four2string.value', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='PlayerLatDegrees', full_name='RequestEnvelop.four2string.PlayerLatDegrees', index=1,
+      number=2, type=6, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='PlayerLngDegrees', full_name='RequestEnvelop.four2string.PlayerLngDegrees', index=2,
+      number=3, type=6, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='GymLatDegrees', full_name='RequestEnvelop.four2string.GymLatDegrees', index=3,
+      number=4, type=6, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='GymLngDegrees', full_name='RequestEnvelop.four2string.GymLngDegrees', index=4,
+      number=5, type=6, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=342,
+  serialized_end=468,
 )
 
 _REQUESTENVELOP_UNKNOWN6_UNKNOWN2 = _descriptor.Descriptor(
@@ -112,11 +173,12 @@ _REQUESTENVELOP_UNKNOWN6_UNKNOWN2 = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=454,
-  serialized_end=482,
+  serialized_start=553,
+  serialized_end=581,
 )
 
 _REQUESTENVELOP_UNKNOWN6 = _descriptor.Descriptor(
@@ -148,11 +210,12 @@ _REQUESTENVELOP_UNKNOWN6 = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=371,
-  serialized_end=482,
+  serialized_start=470,
+  serialized_end=581,
 )
 
 _REQUESTENVELOP_AUTHINFO_JWT = _descriptor.Descriptor(
@@ -184,11 +247,12 @@ _REQUESTENVELOP_AUTHINFO_JWT = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=559,
-  serialized_end=601,
+  serialized_start=658,
+  serialized_end=700,
 )
 
 _REQUESTENVELOP_AUTHINFO = _descriptor.Descriptor(
@@ -220,11 +284,12 @@ _REQUESTENVELOP_AUTHINFO = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=484,
-  serialized_end=601,
+  serialized_start=583,
+  serialized_end=700,
 )
 
 _REQUESTENVELOP = _descriptor.Descriptor(
@@ -300,16 +365,17 @@ _REQUESTENVELOP = _descriptor.Descriptor(
   ],
   extensions=[
   ],
-  nested_types=[_REQUESTENVELOP_REQUESTS, _REQUESTENVELOP_UNKNOWN3, _REQUESTENVELOP_UNKNOWN6, _REQUESTENVELOP_AUTHINFO, ],
+  nested_types=[_REQUESTENVELOP_REQUESTS, _REQUESTENVELOP_FOUR2INT, _REQUESTENVELOP_FOUR2STRING, _REQUESTENVELOP_UNKNOWN6, _REQUESTENVELOP_AUTHINFO, ],
   enum_types=[
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
   oneofs=[
   ],
   serialized_start=18,
-  serialized_end=601,
+  serialized_end=700,
 )
 
 
@@ -335,11 +401,12 @@ _RESPONSEENVELOP_UNKNOWN6_UNKNOWN2 = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=454,
-  serialized_end=482,
+  serialized_start=553,
+  serialized_end=581,
 )
 
 _RESPONSEENVELOP_UNKNOWN6 = _descriptor.Descriptor(
@@ -371,11 +438,12 @@ _RESPONSEENVELOP_UNKNOWN6 = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=809,
-  serialized_end=921,
+  serialized_start=908,
+  serialized_end=1020,
 )
 
 _RESPONSEENVELOP_UNKNOWN7 = _descriptor.Descriptor(
@@ -414,11 +482,12 @@ _RESPONSEENVELOP_UNKNOWN7 = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=923,
-  serialized_end=990,
+  serialized_start=1022,
+  serialized_end=1089,
 )
 
 _RESPONSEENVELOP_PAYLOAD = _descriptor.Descriptor(
@@ -429,14 +498,525 @@ _RESPONSEENVELOP_PAYLOAD = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='unknown1', full_name='ResponseEnvelop.Payload.unknown1', index=0,
-      number=1, type=5, cpp_type=1, label=2,
+      name='value', full_name='ResponseEnvelop.Payload.value', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1091,
+  serialized_end=1137,
+)
+
+_RESPONSEENVELOP_FOUR2INT = _descriptor.Descriptor(
+  name='four2int',
+  full_name='ResponseEnvelop.four2int',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='value', full_name='ResponseEnvelop.four2int.value', index=0,
+      number=1, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=315,
+  serialized_end=340,
+)
+
+_RESPONSEENVELOP_FOUR2STRING = _descriptor.Descriptor(
+  name='four2string',
+  full_name='ResponseEnvelop.four2string',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='value', full_name='ResponseEnvelop.four2string.value', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1166,
+  serialized_end=1216,
+)
+
+_RESPONSEENVELOP_GYM_GYMINFO = _descriptor.Descriptor(
+  name='GymInfo',
+  full_name='ResponseEnvelop.Gym.GymInfo',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='GymState', full_name='ResponseEnvelop.Gym.GymInfo.GymState', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Name', full_name='ResponseEnvelop.Gym.GymInfo.Name', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Url', full_name='ResponseEnvelop.Gym.GymInfo.Url', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Result', full_name='ResponseEnvelop.Gym.GymInfo.Result', index=3,
+      number=4, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='profile', full_name='ResponseEnvelop.Payload.profile', index=1,
+      name='Description', full_name='ResponseEnvelop.Gym.GymInfo.Description', index=4,
+      number=5, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1319,
+  serialized_end=1410,
+)
+
+_RESPONSEENVELOP_GYM_GYMPLAYERS_POKEMON = _descriptor.Descriptor(
+  name='Pokemon',
+  full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='Id', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.Id', index=0,
+      number=1, type=6, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='PokemonId', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.PokemonId', index=1,
+      number=2, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Cp', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.Cp', index=2,
+      number=3, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Stamina', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.Stamina', index=3,
+      number=4, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='MaxStamina', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.MaxStamina', index=4,
+      number=5, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Move1', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.Move1', index=5,
+      number=6, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Move2', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.Move2', index=6,
+      number=7, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='DeployedFortId', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.DeployedFortId', index=7,
+      number=8, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='OwnerName', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.OwnerName', index=8,
+      number=9, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='IsEgg', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.IsEgg', index=9,
+      number=10, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='EggKmWalkedTarget', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.EggKmWalkedTarget', index=10,
+      number=11, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='EggKmWalkedStart', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.EggKmWalkedStart', index=11,
+      number=12, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Origin', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.Origin', index=12,
+      number=14, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='HeightM', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.HeightM', index=13,
+      number=15, type=6, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='WeightKg', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.WeightKg', index=14,
+      number=16, type=6, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='IndividualAttack', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.IndividualAttack', index=15,
+      number=17, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='IndividualDefense', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.IndividualDefense', index=16,
+      number=18, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='IndividualStamina', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.IndividualStamina', index=17,
+      number=19, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='CpMultiplier', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.CpMultiplier', index=18,
+      number=20, type=6, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Pokeball', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.Pokeball', index=19,
+      number=21, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='CapturedS2CellId', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.CapturedS2CellId', index=20,
+      number=22, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='BattlesAttacked', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.BattlesAttacked', index=21,
+      number=23, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='BattlesDefended', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.BattlesDefended', index=22,
+      number=24, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='EggIncubatorId', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.EggIncubatorId', index=23,
+      number=25, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='CreationTimeMs', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.CreationTimeMs', index=24,
+      number=26, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='NumUpgrades', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.NumUpgrades', index=25,
+      number=27, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='AdditionalCpMultiplier', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.AdditionalCpMultiplier', index=26,
+      number=28, type=6, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Favorite', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.Favorite', index=27,
+      number=29, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Nickname', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.Nickname', index=28,
+      number=30, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='FromFort', full_name='ResponseEnvelop.Gym.GymPlayers.Pokemon.FromFort', index=29,
+      number=31, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1542,
+  serialized_end=2174,
+)
+
+_RESPONSEENVELOP_GYM_GYMPLAYERS_PLAYER2 = _descriptor.Descriptor(
+  name='Player2',
+  full_name='ResponseEnvelop.Gym.GymPlayers.Player2',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='Name', full_name='ResponseEnvelop.Gym.GymPlayers.Player2.Name', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Level', full_name='ResponseEnvelop.Gym.GymPlayers.Player2.Level', index=1,
+      number=2, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Avatar', full_name='ResponseEnvelop.Gym.GymPlayers.Player2.Avatar', index=2,
+      number=3, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2176,
+  serialized_end=2270,
+)
+
+_RESPONSEENVELOP_GYM_GYMPLAYERS_AVATAR = _descriptor.Descriptor(
+  name='Avatar',
+  full_name='ResponseEnvelop.Gym.GymPlayers.Avatar',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='Avatar', full_name='ResponseEnvelop.Gym.GymPlayers.Avatar.Avatar', index=0,
+      number=8, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Skin', full_name='ResponseEnvelop.Gym.GymPlayers.Avatar.Skin', index=1,
+      number=2, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Hair', full_name='ResponseEnvelop.Gym.GymPlayers.Avatar.Hair', index=2,
+      number=3, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Shirt', full_name='ResponseEnvelop.Gym.GymPlayers.Avatar.Shirt', index=3,
+      number=4, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Pants', full_name='ResponseEnvelop.Gym.GymPlayers.Avatar.Pants', index=4,
+      number=5, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Hat', full_name='ResponseEnvelop.Gym.GymPlayers.Avatar.Hat', index=5,
+      number=6, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Shoes', full_name='ResponseEnvelop.Gym.GymPlayers.Avatar.Shoes', index=6,
+      number=7, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Eyes', full_name='ResponseEnvelop.Gym.GymPlayers.Avatar.Eyes', index=7,
+      number=9, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='Backpack', full_name='ResponseEnvelop.Gym.GymPlayers.Avatar.Backpack', index=8,
+      number=10, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2273,
+  serialized_end=2415,
+)
+
+_RESPONSEENVELOP_GYM_GYMPLAYERS = _descriptor.Descriptor(
+  name='GymPlayers',
+  full_name='ResponseEnvelop.Gym.GymPlayers',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='pokemon', full_name='ResponseEnvelop.Gym.GymPlayers.pokemon', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='owner', full_name='ResponseEnvelop.Gym.GymPlayers.owner', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -445,184 +1025,36 @@ _RESPONSEENVELOP_PAYLOAD = _descriptor.Descriptor(
   ],
   extensions=[
   ],
-  nested_types=[],
+  nested_types=[_RESPONSEENVELOP_GYM_GYMPLAYERS_POKEMON, _RESPONSEENVELOP_GYM_GYMPLAYERS_PLAYER2, _RESPONSEENVELOP_GYM_GYMPLAYERS_AVATAR, ],
   enum_types=[
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=992,
-  serialized_end=1062,
+  serialized_start=1413,
+  serialized_end=2415,
 )
 
-_RESPONSEENVELOP_PROFILE_AVATARDETAILS = _descriptor.Descriptor(
-  name='AvatarDetails',
-  full_name='ResponseEnvelop.Profile.AvatarDetails',
+_RESPONSEENVELOP_GYM = _descriptor.Descriptor(
+  name='Gym',
+  full_name='ResponseEnvelop.Gym',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='unknown2', full_name='ResponseEnvelop.Profile.AvatarDetails.unknown2', index=0,
-      number=2, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='unknown3', full_name='ResponseEnvelop.Profile.AvatarDetails.unknown3', index=1,
-      number=3, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='unknown9', full_name='ResponseEnvelop.Profile.AvatarDetails.unknown9', index=2,
-      number=9, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='unknown10', full_name='ResponseEnvelop.Profile.AvatarDetails.unknown10', index=3,
-      number=10, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1359,
-  serialized_end=1447,
-)
-
-_RESPONSEENVELOP_PROFILE_CURRENCY = _descriptor.Descriptor(
-  name='Currency',
-  full_name='ResponseEnvelop.Profile.Currency',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='type', full_name='ResponseEnvelop.Profile.Currency.type', index=0,
-      number=1, type=9, cpp_type=9, label=2,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='amount', full_name='ResponseEnvelop.Profile.Currency.amount', index=1,
-      number=2, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  options=None,
-  is_extendable=False,
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1449,
-  serialized_end=1489,
-)
-
-_RESPONSEENVELOP_PROFILE = _descriptor.Descriptor(
-  name='Profile',
-  full_name='ResponseEnvelop.Profile',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='creation_time', full_name='ResponseEnvelop.Profile.creation_time', index=0,
-      number=1, type=3, cpp_type=2, label=2,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='username', full_name='ResponseEnvelop.Profile.username', index=1,
-      number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='team', full_name='ResponseEnvelop.Profile.team', index=2,
-      number=5, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='tutorial', full_name='ResponseEnvelop.Profile.tutorial', index=3,
-      number=7, type=12, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b(""),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='avatar', full_name='ResponseEnvelop.Profile.avatar', index=4,
-      number=8, type=11, cpp_type=10, label=1,
+      name='gym', full_name='ResponseEnvelop.Gym.gym', index=0,
+      number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='poke_storage', full_name='ResponseEnvelop.Profile.poke_storage', index=5,
-      number=9, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='item_storage', full_name='ResponseEnvelop.Profile.item_storage', index=6,
-      number=10, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='unknown11', full_name='ResponseEnvelop.Profile.unknown11', index=7,
-      number=11, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='unknown12', full_name='ResponseEnvelop.Profile.unknown12', index=8,
-      number=12, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='unknown13', full_name='ResponseEnvelop.Profile.unknown13', index=9,
-      number=13, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='currency', full_name='ResponseEnvelop.Profile.currency', index=10,
-      number=14, type=11, cpp_type=10, label=3,
+      name='players', full_name='ResponseEnvelop.Gym.players', index=1,
+      number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -630,16 +1062,17 @@ _RESPONSEENVELOP_PROFILE = _descriptor.Descriptor(
   ],
   extensions=[
   ],
-  nested_types=[_RESPONSEENVELOP_PROFILE_AVATARDETAILS, _RESPONSEENVELOP_PROFILE_CURRENCY, ],
+  nested_types=[_RESPONSEENVELOP_GYM_GYMINFO, _RESPONSEENVELOP_GYM_GYMPLAYERS, ],
   enum_types=[
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1065,
-  serialized_end=1489,
+  serialized_start=1219,
+  serialized_end=2415,
 )
 
 _RESPONSEENVELOP = _descriptor.Descriptor(
@@ -694,21 +1127,22 @@ _RESPONSEENVELOP = _descriptor.Descriptor(
   ],
   extensions=[
   ],
-  nested_types=[_RESPONSEENVELOP_UNKNOWN6, _RESPONSEENVELOP_UNKNOWN7, _RESPONSEENVELOP_PAYLOAD, _RESPONSEENVELOP_PROFILE, ],
+  nested_types=[_RESPONSEENVELOP_UNKNOWN6, _RESPONSEENVELOP_UNKNOWN7, _RESPONSEENVELOP_PAYLOAD, _RESPONSEENVELOP_FOUR2INT, _RESPONSEENVELOP_FOUR2STRING, _RESPONSEENVELOP_GYM, ],
   enum_types=[
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=604,
-  serialized_end=1489,
+  serialized_start=703,
+  serialized_end=2415,
 )
 
-_REQUESTENVELOP_REQUESTS.fields_by_name['message'].message_type = _REQUESTENVELOP_UNKNOWN3
 _REQUESTENVELOP_REQUESTS.containing_type = _REQUESTENVELOP
-_REQUESTENVELOP_UNKNOWN3.containing_type = _REQUESTENVELOP
+_REQUESTENVELOP_FOUR2INT.containing_type = _REQUESTENVELOP
+_REQUESTENVELOP_FOUR2STRING.containing_type = _REQUESTENVELOP
 _REQUESTENVELOP_UNKNOWN6_UNKNOWN2.containing_type = _REQUESTENVELOP_UNKNOWN6
 _REQUESTENVELOP_UNKNOWN6.fields_by_name['unknown2'].message_type = _REQUESTENVELOP_UNKNOWN6_UNKNOWN2
 _REQUESTENVELOP_UNKNOWN6.containing_type = _REQUESTENVELOP
@@ -722,13 +1156,22 @@ _RESPONSEENVELOP_UNKNOWN6_UNKNOWN2.containing_type = _RESPONSEENVELOP_UNKNOWN6
 _RESPONSEENVELOP_UNKNOWN6.fields_by_name['unknown2'].message_type = _RESPONSEENVELOP_UNKNOWN6_UNKNOWN2
 _RESPONSEENVELOP_UNKNOWN6.containing_type = _RESPONSEENVELOP
 _RESPONSEENVELOP_UNKNOWN7.containing_type = _RESPONSEENVELOP
-_RESPONSEENVELOP_PAYLOAD.fields_by_name['profile'].message_type = _RESPONSEENVELOP_PROFILE
+_RESPONSEENVELOP_PAYLOAD.fields_by_name['value'].message_type = _RESPONSEENVELOP_GYM
 _RESPONSEENVELOP_PAYLOAD.containing_type = _RESPONSEENVELOP
-_RESPONSEENVELOP_PROFILE_AVATARDETAILS.containing_type = _RESPONSEENVELOP_PROFILE
-_RESPONSEENVELOP_PROFILE_CURRENCY.containing_type = _RESPONSEENVELOP_PROFILE
-_RESPONSEENVELOP_PROFILE.fields_by_name['avatar'].message_type = _RESPONSEENVELOP_PROFILE_AVATARDETAILS
-_RESPONSEENVELOP_PROFILE.fields_by_name['currency'].message_type = _RESPONSEENVELOP_PROFILE_CURRENCY
-_RESPONSEENVELOP_PROFILE.containing_type = _RESPONSEENVELOP
+_RESPONSEENVELOP_FOUR2INT.containing_type = _RESPONSEENVELOP
+_RESPONSEENVELOP_FOUR2STRING.fields_by_name['value'].message_type = _RESPONSEENVELOP_GYM
+_RESPONSEENVELOP_FOUR2STRING.containing_type = _RESPONSEENVELOP
+_RESPONSEENVELOP_GYM_GYMINFO.containing_type = _RESPONSEENVELOP_GYM
+_RESPONSEENVELOP_GYM_GYMPLAYERS_POKEMON.containing_type = _RESPONSEENVELOP_GYM_GYMPLAYERS
+_RESPONSEENVELOP_GYM_GYMPLAYERS_PLAYER2.fields_by_name['Avatar'].message_type = _RESPONSEENVELOP_GYM_GYMPLAYERS_AVATAR
+_RESPONSEENVELOP_GYM_GYMPLAYERS_PLAYER2.containing_type = _RESPONSEENVELOP_GYM_GYMPLAYERS
+_RESPONSEENVELOP_GYM_GYMPLAYERS_AVATAR.containing_type = _RESPONSEENVELOP_GYM_GYMPLAYERS
+_RESPONSEENVELOP_GYM_GYMPLAYERS.fields_by_name['pokemon'].message_type = _RESPONSEENVELOP_GYM_GYMPLAYERS_POKEMON
+_RESPONSEENVELOP_GYM_GYMPLAYERS.fields_by_name['owner'].message_type = _RESPONSEENVELOP_GYM_GYMPLAYERS_PLAYER2
+_RESPONSEENVELOP_GYM_GYMPLAYERS.containing_type = _RESPONSEENVELOP_GYM
+_RESPONSEENVELOP_GYM.fields_by_name['gym'].message_type = _RESPONSEENVELOP_GYM_GYMINFO
+_RESPONSEENVELOP_GYM.fields_by_name['players'].message_type = _RESPONSEENVELOP_GYM_GYMPLAYERS
+_RESPONSEENVELOP_GYM.containing_type = _RESPONSEENVELOP
 _RESPONSEENVELOP.fields_by_name['unknown6'].message_type = _RESPONSEENVELOP_UNKNOWN6
 _RESPONSEENVELOP.fields_by_name['unknown7'].message_type = _RESPONSEENVELOP_UNKNOWN7
 _RESPONSEENVELOP.fields_by_name['payload'].message_type = _RESPONSEENVELOP_PAYLOAD
@@ -744,10 +1187,17 @@ RequestEnvelop = _reflection.GeneratedProtocolMessageType('RequestEnvelop', (_me
     ))
   ,
 
-  Unknown3 = _reflection.GeneratedProtocolMessageType('Unknown3', (_message.Message,), dict(
-    DESCRIPTOR = _REQUESTENVELOP_UNKNOWN3,
+  four2int = _reflection.GeneratedProtocolMessageType('four2int', (_message.Message,), dict(
+    DESCRIPTOR = _REQUESTENVELOP_FOUR2INT,
     __module__ = 'pokemon_pb2'
-    # @@protoc_insertion_point(class_scope:RequestEnvelop.Unknown3)
+    # @@protoc_insertion_point(class_scope:RequestEnvelop.four2int)
+    ))
+  ,
+
+  four2string = _reflection.GeneratedProtocolMessageType('four2string', (_message.Message,), dict(
+    DESCRIPTOR = _REQUESTENVELOP_FOUR2STRING,
+    __module__ = 'pokemon_pb2'
+    # @@protoc_insertion_point(class_scope:RequestEnvelop.four2string)
     ))
   ,
 
@@ -784,7 +1234,8 @@ RequestEnvelop = _reflection.GeneratedProtocolMessageType('RequestEnvelop', (_me
   ))
 _sym_db.RegisterMessage(RequestEnvelop)
 _sym_db.RegisterMessage(RequestEnvelop.Requests)
-_sym_db.RegisterMessage(RequestEnvelop.Unknown3)
+_sym_db.RegisterMessage(RequestEnvelop.four2int)
+_sym_db.RegisterMessage(RequestEnvelop.four2string)
 _sym_db.RegisterMessage(RequestEnvelop.Unknown6)
 _sym_db.RegisterMessage(RequestEnvelop.Unknown6.Unknown2)
 _sym_db.RegisterMessage(RequestEnvelop.AuthInfo)
@@ -820,24 +1271,59 @@ ResponseEnvelop = _reflection.GeneratedProtocolMessageType('ResponseEnvelop', (_
     ))
   ,
 
-  Profile = _reflection.GeneratedProtocolMessageType('Profile', (_message.Message,), dict(
-
-    AvatarDetails = _reflection.GeneratedProtocolMessageType('AvatarDetails', (_message.Message,), dict(
-      DESCRIPTOR = _RESPONSEENVELOP_PROFILE_AVATARDETAILS,
-      __module__ = 'pokemon_pb2'
-      # @@protoc_insertion_point(class_scope:ResponseEnvelop.Profile.AvatarDetails)
-      ))
-    ,
-
-    Currency = _reflection.GeneratedProtocolMessageType('Currency', (_message.Message,), dict(
-      DESCRIPTOR = _RESPONSEENVELOP_PROFILE_CURRENCY,
-      __module__ = 'pokemon_pb2'
-      # @@protoc_insertion_point(class_scope:ResponseEnvelop.Profile.Currency)
-      ))
-    ,
-    DESCRIPTOR = _RESPONSEENVELOP_PROFILE,
+  four2int = _reflection.GeneratedProtocolMessageType('four2int', (_message.Message,), dict(
+    DESCRIPTOR = _RESPONSEENVELOP_FOUR2INT,
     __module__ = 'pokemon_pb2'
-    # @@protoc_insertion_point(class_scope:ResponseEnvelop.Profile)
+    # @@protoc_insertion_point(class_scope:ResponseEnvelop.four2int)
+    ))
+  ,
+
+  four2string = _reflection.GeneratedProtocolMessageType('four2string', (_message.Message,), dict(
+    DESCRIPTOR = _RESPONSEENVELOP_FOUR2STRING,
+    __module__ = 'pokemon_pb2'
+    # @@protoc_insertion_point(class_scope:ResponseEnvelop.four2string)
+    ))
+  ,
+
+  Gym = _reflection.GeneratedProtocolMessageType('Gym', (_message.Message,), dict(
+
+    GymInfo = _reflection.GeneratedProtocolMessageType('GymInfo', (_message.Message,), dict(
+      DESCRIPTOR = _RESPONSEENVELOP_GYM_GYMINFO,
+      __module__ = 'pokemon_pb2'
+      # @@protoc_insertion_point(class_scope:ResponseEnvelop.Gym.GymInfo)
+      ))
+    ,
+
+    GymPlayers = _reflection.GeneratedProtocolMessageType('GymPlayers', (_message.Message,), dict(
+
+      Pokemon = _reflection.GeneratedProtocolMessageType('Pokemon', (_message.Message,), dict(
+        DESCRIPTOR = _RESPONSEENVELOP_GYM_GYMPLAYERS_POKEMON,
+        __module__ = 'pokemon_pb2'
+        # @@protoc_insertion_point(class_scope:ResponseEnvelop.Gym.GymPlayers.Pokemon)
+        ))
+      ,
+
+      Player2 = _reflection.GeneratedProtocolMessageType('Player2', (_message.Message,), dict(
+        DESCRIPTOR = _RESPONSEENVELOP_GYM_GYMPLAYERS_PLAYER2,
+        __module__ = 'pokemon_pb2'
+        # @@protoc_insertion_point(class_scope:ResponseEnvelop.Gym.GymPlayers.Player2)
+        ))
+      ,
+
+      Avatar = _reflection.GeneratedProtocolMessageType('Avatar', (_message.Message,), dict(
+        DESCRIPTOR = _RESPONSEENVELOP_GYM_GYMPLAYERS_AVATAR,
+        __module__ = 'pokemon_pb2'
+        # @@protoc_insertion_point(class_scope:ResponseEnvelop.Gym.GymPlayers.Avatar)
+        ))
+      ,
+      DESCRIPTOR = _RESPONSEENVELOP_GYM_GYMPLAYERS,
+      __module__ = 'pokemon_pb2'
+      # @@protoc_insertion_point(class_scope:ResponseEnvelop.Gym.GymPlayers)
+      ))
+    ,
+    DESCRIPTOR = _RESPONSEENVELOP_GYM,
+    __module__ = 'pokemon_pb2'
+    # @@protoc_insertion_point(class_scope:ResponseEnvelop.Gym)
     ))
   ,
   DESCRIPTOR = _RESPONSEENVELOP,
@@ -849,9 +1335,14 @@ _sym_db.RegisterMessage(ResponseEnvelop.Unknown6)
 _sym_db.RegisterMessage(ResponseEnvelop.Unknown6.Unknown2)
 _sym_db.RegisterMessage(ResponseEnvelop.Unknown7)
 _sym_db.RegisterMessage(ResponseEnvelop.Payload)
-_sym_db.RegisterMessage(ResponseEnvelop.Profile)
-_sym_db.RegisterMessage(ResponseEnvelop.Profile.AvatarDetails)
-_sym_db.RegisterMessage(ResponseEnvelop.Profile.Currency)
+_sym_db.RegisterMessage(ResponseEnvelop.four2int)
+_sym_db.RegisterMessage(ResponseEnvelop.four2string)
+_sym_db.RegisterMessage(ResponseEnvelop.Gym)
+_sym_db.RegisterMessage(ResponseEnvelop.Gym.GymInfo)
+_sym_db.RegisterMessage(ResponseEnvelop.Gym.GymPlayers)
+_sym_db.RegisterMessage(ResponseEnvelop.Gym.GymPlayers.Pokemon)
+_sym_db.RegisterMessage(ResponseEnvelop.Gym.GymPlayers.Player2)
+_sym_db.RegisterMessage(ResponseEnvelop.Gym.GymPlayers.Avatar)
 
 
 # @@protoc_insertion_point(module_scope)
